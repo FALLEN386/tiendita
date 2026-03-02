@@ -1,0 +1,18 @@
+# Ejemplo carrito de compras con objeto y template
+
+## Todo con fines educativos
+Si puedes mejorar el codigo , bienvenido
+
+
+## template
+```html
+<template id="template">
+    <li class="list-group-item d-flex justify-content-between ">
+        <span class="lead">Carrillo🛒</span>
+        <span class="badge bg-secondary rounded-pill">12</span>
+    </li>
+
+  </template>
+
+```
+
