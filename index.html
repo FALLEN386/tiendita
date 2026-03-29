@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     
 </head>
-<body>
+<body class="bg-dark">
     
     <main class="container mt-5">
     <div class="row text-center">
@@ -16,8 +16,10 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Carrillo🛒</h5>
+                    <p class="lead">$300</p>
                     <button class="btn btn-outline-secondary"
                     data-fruta="carrillo"
+                    data-precio="300"
                     >Agregar</button>
                 </div>
             </div>
@@ -28,8 +30,10 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Naranja🍊</h5>
+                    <p class="lead">$100</p>
                     <button class="btn btn-outline-secondary"
                     data-fruta="naranja"
+                    data-precio="100"
                     >Agregar</button>
                 </div>
             </div>
@@ -44,8 +48,10 @@
                     <h5 class="card-title">
                         Sandia🍉
                     </h5>
+                    <p class="lead">$500</p>
                     <button class="btn btn-outline-secondary"
                     data-fruta="sandia"
+                    data-precio="500"
                     >Agregar</button>
                 </div>
             </div>
@@ -58,12 +64,42 @@
     <ul class="list-group" id="carrito"></ul>
   </section>
 
-  <template id="template">
-    <li class="list-group-item d-flex justify-content-between ">
-        <span class="lead">Carrillo🛒</span>
-        <span class="badge bg-secondary rounded-pill">12</span>
-    </li>
+  <footer id="footer" class="container mt-3">
+    <template id="templateFooter">
+        <div class="card">
+            <div class="card-body d-flex justify-content-between align-items-canter">
+                <p class="lead mb-0">total $ <span>1500</span></p>
+                <button
+                class="btn btn-outline-info"
+                >Finalizar compra</button>
+            </div>
+        </div>
 
+    </template>
+
+  </footer>
+
+  <template id="template">
+        
+        
+        <li class="list-group-item bg-secondary text-white">
+          <span class="badge bg-secondary rounded-pill align-middle">12</span>
+          <span class="lead">Carrillo🛒</span>
+        </li>
+        
+        <li class="list-group-item  d-flex justify-content-between
+        align-items-canter">
+            <div>
+                <p class="lead mb-0">Total: $<span>300</span></p>
+
+
+            </div>
+            <div>
+                  <button class="btn btn-sm btn-danger">Quitar</button>
+                  <button class="btn btn-sm btn-success">Agregar</button>
+            </div>
+        </li>
+        </li>
   </template> 
 
 
